@@ -1,0 +1,4 @@
+ lib=F:\8848\Cadence\Cadence_SPB_17.2-2016\tools\PSpice\Library\jfet.lib, offset=65426, size=277
+ lib=F:\8848\Cadence\Cadence_SPB_17.2-2016\tools\PSpice\Library\pwrbjt.lib, offset=4563, size=332
+ lib=F:\8848\Cadence\Cadence_SPB_17.2-2016\tools\PSpice\Library\opamp.lib, offset=104536, size=1060
+ lib=F:\8848\Cadence\Cadence_SPB_17.2-2016\tools\PSpice\Library\di.lib, offset=37085, size=678

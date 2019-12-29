@@ -1,0 +1,157 @@
+
+**** 09/29/18 10:06:00 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-nwe"  [ d:\111\111-pspicefiles\schematic1\nwe.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "nwe.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of F:\8848\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 100m  0 SKIPBP 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source 111
+X_U1         0 N00544 N00882 N00524 N10848 N00544 N00540 N00524 555B
+V_V1         N00524 0 3Vdc
+C_C9         0 N10848  0.01uF  TC=0,0 
+C_C10         N00544 0  820pF  TC=0,0 
+R_R6         N00540 N00524  3k TC=0,0 
+R_R7         N00544 N00540  56k TC=0,0 
+R_R8         N00889 N00882  6.8k TC=0,0 
+X_D7         N35654 N35556 awb1n4007 PARAMS:                
+X_D8         N23387 N35556 awb1n4007 PARAMS:                
+X_D9         N35654 N35695 awb1n4007 PARAMS:                
+X_Q2         N21334 N00889 0 awb2n5551 PARAMS:                                 
++            
+C_C18         N35695 N35556  0.022uF IC=1260  
+C_C19         N35654 N23387  0.022uF IC=1260  
+C_C20         N35556 0  0.022uF IC=630  
+Kn_K1         L_L1 L_L2     1
+L_L1         N00524 N21334  1  
+L_L2         0 N23387  166.67  
+R_R9         0 N35695  1G  
+
+**** RESUMING nwe.cir ****
+.END
+
+**** 09/29/18 10:06:00 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-nwe"  [ d:\111\111-pspicefiles\schematic1\nwe.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_D7.model22    X_D8.model22    X_D9.model22    
+          IS  149.000000E-09  149.000000E-09  149.000000E-09 
+           N    2.21            2.21            2.21         
+          BV    1.100000E+03    1.100000E+03    1.100000E+03 
+         IBV    1               1               1            
+          RS     .03             .03             .03         
+          TT    1.440000E-06    1.440000E-06    1.440000E-06 
+         CJO   23.130000E-12   23.130000E-12   23.130000E-12 
+          VJ     .5              .5              .5          
+           M     .421            .421            .421        
+          EG    1.11            1.11            1.11         
+
+
+**** 09/29/18 10:06:00 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-nwe"  [ d:\111\111-pspicefiles\schematic1\nwe.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.qnpn555    X_U1.qpnp555    X_Q2.model4     
+               NPN             PNP             NPN             
+       LEVEL    1               1               1            
+          IS   14.340000E-15  650.600000E-18   44.100000E-15 
+          EG                                    1.11         
+          BF   65.62           70.35          180            
+          NF    1               1                .995        
+         VAF   74.03          115.7           100            
+         IKF     .02             .02            7.140000E-03 
+         ISE   19.480000E-15  180.500000E-15  252.560000E-12 
+          NE    1.208           1.829           2.894        
+          BR    9.715           4.146           1.844        
+          NR    1               1                .995        
+         VAR                                  100            
+         IKR                                    7.140000E-03 
+         ISC                                  252.560000E-12 
+          NC                                    2.894        
+         ISS    0               0               0            
+          RB   10              10             700            
+         RBM                                   36            
+         IRB                                    3.000000E-03 
+          RE    0               0                .05         
+          RC    1                .715           2.3          
+         CJE   40.000000E-12   40.000000E-12   18.520000E-12 
+         VJE     .75             .75             .8          
+         MJE     .377            .3357           .46         
+         CJC   40.000000E-12   40.000000E-12    7.700000E-12 
+         VJC     .75             .75             .5          
+         MJC     .3416           .5383           .36         
+        XCJC    1               1                .5          
+         CJS    0               0               0            
+         VJS     .75             .75             .7          
+         MJS                                     .5          
+          TF    1.000000E-09    1.000000E-09    1.590000E-09 
+         XTF    3               1.7             1            
+         VTF    1.7             5              20            
+         ITF     .6              .65             .2          
+          TR   58.980000E-09  119.900000E-09  273.000000E-09 
+         XTB    1.5             1.5             1.92         
+          KF    0               0               0            
+          AF    1               1               1            
+          CN    2.42            2.2             2.42         
+           D     .87             .52             .87         
+
+
+
+          JOB CONCLUDED
+
+**** 09/29/18 10:06:00 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-nwe"  [ d:\111\111-pspicefiles\schematic1\nwe.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =       29.48
+

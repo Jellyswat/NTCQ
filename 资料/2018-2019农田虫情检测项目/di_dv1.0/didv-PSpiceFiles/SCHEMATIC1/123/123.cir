@@ -1,0 +1,20 @@
+** Profile: "SCHEMATIC1-123"  [ D:\ddd\gkd\2018-2019农田虫情检测项目\di_dv1.0\didv-pspicefiles\schematic1\123.sim ] 
+
+** Creating circuit file "123.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "D:/ddd/gkd/lay/OPA4330_PSPICE_AIO/OPA4330.LIB" 
+* From [PSPICE NETLIST] section of F:\8848\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 100m 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

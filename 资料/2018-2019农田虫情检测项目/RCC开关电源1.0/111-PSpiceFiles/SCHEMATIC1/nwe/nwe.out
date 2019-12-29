@@ -1,0 +1,157 @@
+
+**** 11/14/19 09:31:34 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-nwe"  [ G:\BaiduNetdiskDownload\资料\2018-2019农田虫情检测项目\RCC开关电源1.0\111-pspicefiles\schematic1\nwe
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "nwe.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of E:\BaiduNetdisk\Cadence\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 200u 0 SKIPBP 
+.OPTIONS ADVCONV
+.OPTIONS ABSTOL= 1p
+.OPTIONS GMIN= 1p
+.OPTIONS VNTOL= 1u
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source 111
+X_D7         N40193 N40189 awb1n4007 PARAMS:                
+X_D8         N40189 N40206 awb1n4007 PARAMS:                
+X_D9         N40206 N40249 awb1n4007 PARAMS:                
+C_C18         N40206 N40193  0.022uF IC=1000  
+C_C19         N40249 N40189  0.022uF IC=1000  
+C_C20         N40189 0  0.022uF IC=500  
+Kn_K1         L_L1 L_L2 
++ L_L3    0.999999
+L_L1         N56604 N60718  75.625uH  
+L_L2         0 N60729  10uH  
+X_Q3         N56604 N60725 N60729 awb2n5551 PARAMS:                            
++                 
+V_V1         N56604 0 3Vdc
+R_R1         N60725 N60718  680 TC=0,0 
+L_L3         N40193 0  306250uH  
+R_R2         0 N40249  1G TC=0,0 
+
+**** RESUMING nwe.cir ****
+.END
+
+**** 11/14/19 09:31:34 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-nwe"  [ G:\BaiduNetdiskDownload\资料\2018-2019农田虫情检测项目\RCC开关电源1.0\111-pspicefiles\schematic1\nwe
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_D7.model22    X_D8.model22    X_D9.model22    
+          IS  149.000000E-09  149.000000E-09  149.000000E-09 
+           N    2.21            2.21            2.21         
+          BV    1.100000E+03    1.100000E+03    1.100000E+03 
+         IBV    1               1               1            
+          RS     .03             .03             .03         
+          TT    1.440000E-06    1.440000E-06    1.440000E-06 
+         CJO   23.130000E-12   23.130000E-12   23.130000E-12 
+          VJ     .5              .5              .5          
+           M     .421            .421            .421        
+          EG    1.11            1.11            1.11         
+
+
+**** 11/14/19 09:31:34 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-nwe"  [ G:\BaiduNetdiskDownload\资料\2018-2019农田虫情检测项目\RCC开关电源1.0\111-pspicefiles\schematic1\nwe
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_Q3.model4     
+               NPN             
+       LEVEL    1            
+          IS   44.100000E-15 
+          EG    1.11         
+          BF  180            
+          NF     .995        
+         VAF  100            
+         IKF    7.140000E-03 
+         ISE  252.560000E-12 
+          NE    2.894        
+          BR    1.844        
+          NR     .995        
+         VAR  100            
+         IKR    7.140000E-03 
+         ISC  252.560000E-12 
+          NC    2.894        
+         ISS    0            
+          RB  700            
+         RBM   36            
+         IRB    3.000000E-03 
+          RE     .05         
+          RC    2.3          
+         CJE   18.520000E-12 
+         VJE     .8          
+         MJE     .46         
+         CJC    7.700000E-12 
+         VJC     .5          
+         MJC     .36         
+        XCJC     .5          
+         CJS    0            
+         VJS     .7          
+         MJS     .5          
+          TF    1.590000E-09 
+         XTF    1            
+         VTF   20            
+         ITF     .2          
+          TR  273.000000E-09 
+         XTB    1.92         
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+
+          JOB CONCLUDED
+
+**** 11/14/19 09:31:34 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-nwe"  [ G:\BaiduNetdiskDownload\资料\2018-2019农田虫情检测项目\RCC开关电源1.0\111-pspicefiles\schematic1\nwe
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .09
+

@@ -1,0 +1,259 @@
+
+**** 10/18/18 11:06:40 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-ex1"  [ C:\Users\wxy\Desktop\项目汇总\项目汇总\峰值保持电路相关资料\项目2016(峰值）\pspice\ex1\ex1-pspicefil
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "ex1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of F:\8848\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1 0 1m 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source EX1
+X_U1A         N00273 N00543 5V -5V N00424 UA772
+V_V1         N00273 GND  
++PULSE 0 10mV 5us 50ns 50ns 50ns 5us
+R_R1         N00543 N00456  250  
+R_R2         N00500 N00462  20  
+R_R3         N00800 N00914  150  
+R_R4         N00809 N00910  20  
+R_R5         N00963 N00930  20  
+C_C1         GND N00500  33p  
+R_R6         GND N00543  425  
+R_R7         N00689 N00428  1000k  
+R_R8         N00543 N00689  425  
+J_J1         N00800 N00462 N00809 J230 
+J_J2         N00809 N01278 N00963 J230 
+C_C2         GND N00800  0.01u  
+Q_Q1         N00914 N00910 N00689 Q2N1893
+Q_Q2         N00689 N00930 N01290 Q2N1893
+Q_Q3         N00963 N00963 N01251 Q2N1893
+R_R9         N01266 N01251  150  
+R_R10         N01266 N01290  150  
+C_C3         N01266 N01278  0.01u  
+X_D4         N00424 N00428 awb1n4007 PARAMS:                
+X_D5         N00428 N00462 awb1n4007 PARAMS:                
+X_D6         N00456 N00424 awb1n4007 PARAMS:                
+
+**** RESUMING ex1.cir ****
+.END
+
+**** 10/18/18 11:06:40 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-ex1"  [ C:\Users\wxy\Desktop\项目汇总\项目汇总\峰值保持电路相关资料\项目2016(峰值）\pspice\ex1\ex1-pspicefil
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1A.dx        X_U1A.dy        X_D4.model22    X_D5.model22    
+          IS  800.000000E-18  800.000000E-18  149.000000E-09  149.000000E-09 
+           N                                    2.21            2.21         
+          BV                                    1.100000E+03    1.100000E+03 
+         IBV                                    1               1            
+          RS                    1.000000E-03     .03             .03         
+          TT                                    1.440000E-06    1.440000E-06 
+         CJO                   10.000000E-12   23.130000E-12   23.130000E-12 
+          VJ                                     .5              .5          
+           M                                     .421            .421        
+          EG                                    1.11            1.11         
+
+
+               X_D6.model22    
+          IS  149.000000E-09 
+           N    2.21         
+          BV    1.100000E+03 
+         IBV    1            
+          RS     .03         
+          TT    1.440000E-06 
+         CJO   23.130000E-12 
+          VJ     .5          
+           M     .421        
+          EG    1.11         
+
+
+**** 10/18/18 11:06:40 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-ex1"  [ C:\Users\wxy\Desktop\项目汇总\项目汇总\峰值保持电路相关资料\项目2016(峰值）\pspice\ex1\ex1-pspicefil
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Q2N1893         
+               NPN             
+       LEVEL    1            
+          IS    2.079000E-15 
+          BF  167.2          
+          NF    1            
+         VAF  100            
+         IKF    1.088        
+         ISE   24.360000E-15 
+          NE    1.357        
+          BR    1.502        
+          NR    1            
+         IKR     .3028       
+         ISC  264.600000E-15 
+          NC    1.545        
+          NK     .8271       
+         ISS    0            
+          RE    0            
+          RC     .9069       
+         CJE   58.120000E-12 
+         VJE     .5          
+         MJE     .441        
+         CJC   45.290000E-12 
+         VJC     .5          
+         MJC     .31         
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          TF  738.100000E-12 
+         XTF   24.93         
+         VTF   10            
+         ITF    2.376        
+          TR    1.000000E-06 
+         XTB    1.5          
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 10/18/18 11:06:40 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-ex1"  [ C:\Users\wxy\Desktop\项目汇总\项目汇总\峰值保持电路相关资料\项目2016(峰值）\pspice\ex1\ex1-pspicefil
+
+
+ ****     Junction FET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               J230            X_U1A.jx        
+               NJF             PJF             
+         VTO   -1.718          -1            
+        BETA  642.100000E-06  205.000000E-06 
+      LAMBDA    7.333000E-03                 
+          IS   29.040000E-15   25.000000E-12 
+         ISR  281.900000E-15                 
+       ALPHA  698.000000E-06                 
+          VK  270.4                          
+          RD    1                            
+          RS    1                            
+         CGD    2.590000E-12                 
+         CGS    3.882000E-12                 
+           M     .3601                       
+       VTOTC   -2.500000E-03                 
+     BETATCE    -.5                          
+          KF  160.100000E-18                 
+
+
+Starting pseudo-transient algorithm.
+
+**** 10/18/18 11:06:40 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-ex1"  [ C:\Users\wxy\Desktop\项目汇总\项目汇总\峰值保持电路相关资料\项目2016(峰值）\pspice\ex1\ex1-pspicefil
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   5V) -513.4300  (  -5V) -513.5100  (  GND) -513.3400  (N00273) -513.3400     
+
+(N00424) -513.4700 (N00428) -513.4300 (N00456) -513.3400 (N00462) -513.4300     
+
+(N00500) -513.4300 (N00543) -513.3400 (N00689) -513.3400 (N00800) -513.3400     
+
+(N00809) -513.3400 (N00910) -513.3400 (N00914) -513.3400 (N00930) -513.3400     
+
+(N00963) -513.3400 (N01251) -513.3400 (N01266) -513.3400 (N01278) -513.3400     
+
+(N01290) -513.3400 (X_U1A.6)-5.372E-06                   (X_U1A.7) -513.4700    
+
+(X_U1A.8) -513.4700                   (X_U1A.9)    0.0000                       
+
+(X_U1A.10) -513.0800                  (X_U1A.11) -513.1700                      
+
+(X_U1A.12) -513.1700                  (X_U1A.53) -514.4300                      
+
+(X_U1A.54) -512.5100                  (X_U1A.90) 193.2E-06                      
+
+(X_U1A.91)   25.0000                  (X_U1A.92)  -25.0000                      
+
+(X_U1A.99) -513.4700                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         7.002E-07
+    X_U1A.vb    -5.372E-11
+    X_U1A.vc    -7.906E+00
+    X_U1A.ve    -7.906E+00
+    X_U1A.vlim   1.932E-07
+    X_U1A.vlp   -2.500E-11
+    X_U1A.vln   -2.500E-11
+
+    TOTAL POWER DISSIPATION   1.58E+01  WATTS
+
+
+          JOB ABORTED
+
+**** 10/18/18 11:06:40 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-ex1"  [ C:\Users\wxy\Desktop\项目汇总\项目汇总\峰值保持电路相关资料\项目2016(峰值）\pspice\ex1\ex1-pspicefil
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        6.89
+

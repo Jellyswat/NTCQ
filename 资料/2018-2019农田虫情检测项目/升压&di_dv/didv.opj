@@ -1,0 +1,100 @@
+(ExpressProject "didv"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\didv.DSN"
+      (Type "Schematic Design")
+      (DisplayName ".\didv.DSN"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Outputs"
+    (File ".\didv-PSpiceFiles\SCHEMATIC1\SCHEMATIC1.net"
+      (Type "Report")
+      (DisplayName ".\didv-PSpiceFiles\SCHEMATIC1\SCHEMATIC1.net")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (ActiveProfile ".\didv-pspicefiles\schematic1\123.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\didv-pspicefiles\schematic1\123.sim"
+        (DisplayName "SCHEMATIC1-123")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries"
+      (Sort User)
+      (File "d:\ddd\213\opa4330_pspice_aio\opa4330.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName "d:\ddd\213\opa4330_pspice_aio\opa4330.lib")))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (r
+      (FullPartName "r.Normal")
+      (LibraryName
+         "F:\8848\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG_P.OLB")
+      (DeviceIndex "0"))
+    (C_elect
+      (FullPartName "C_elect.Normal")
+      (LibraryName
+         "F:\8848\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName
+         "F:\8848\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (ISRC
+      (FullPartName "ISRC.Normal")
+      (LibraryName
+         "F:\8848\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (OPA4330
+      (FullPartName "OPA4330.Normal")
+      (LibraryName "D:\DDD\213\OPA4330_PSPICE_AIO\OPA4330.OLB")
+      (DeviceIndex "0"))
+    (VCC
+      (LibraryName
+         "F:\8848\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (c
+      (FullPartName "c.Normal")
+      (LibraryName
+         "F:\8848\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG_P.OLB")
+      (DeviceIndex "0"))
+    (LF357
+      (FullPartName "LF357.Normal")
+      (LibraryName
+         "F:\8848\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\ADVANLS\OPA.OLB")
+      (DeviceIndex "0")))
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "e:\资料\2018-2019农田虫情检测项目\升压&di_dv\didv.DSN")
+      (Path "Design Resources"
+         "e:\资料\2018-2019农田虫情检测项目\升压&di_dv\didv.DSN" "SCHEMATIC1")
+      (Path "Outputs")
+      (Select "Design Resources"
+         "e:\资料\2018-2019农田虫情检测项目\升压&di_dv\didv.DSN" "SCHEMATIC1"
+         "PAGE1"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 411"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 0 635 -8 -31 52 1688 52 511")
+        (Scroll "119 746")
+        (Zoom "200")
+        (Occurrence "/"))
+      (Path "E:\资料\2018-2019农田虫情检测项目\升压&DI_DV\DIDV.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1")))
+  (MPSSessionName "恰好！")
+  (LastUsedLibraryBrowseDirectory "D:\ddd\213\OPA4330_PSPICE_AIO"))

@@ -1,0 +1,52 @@
+(ExpressProject "pro1"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File "D:\pspice2\pro1.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x"))
+  (Folder "Outputs")
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (ActiveProfile ".\pro1-pspicefiles\schematic1\1.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\pro1-pspicefiles\schematic1\1.sim"
+        (DisplayName "SCHEMATIC1-1")
+        (Type "PSpice Profile")))
+    (Folder "Stimulus Files")
+    (Folder "Include Files")
+    (Folder "Model Libraries"
+      (File "D:\pspice2\OPA860_BUF Model.lib"
+        (DisplayName "D:\pspice2\OPA860_BUF Model.lib")
+        (Type "PSpiceLibrary"))
+      (File "D:\pspice2\OPA860 OTA Model.lib"
+        (DisplayName "D:\pspice2\OPA860 OTA Model.lib")
+        (Type "PSpiceLibrary"))
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector)
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" "D:\pspice2\pro1.dsn")
+      (Path "Design Resources" "D:\pspice2\pro1.dsn" "SCHEMATIC1")
+      (Select "Design Resources" "D:\pspice2\pro1.dsn" "SCHEMATIC1" "PAGE1"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -30 0 200 0 219"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 50 1240 50 307")
+        (Scroll "-86 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path "D:\PSPICE2\PRO1.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1"))))

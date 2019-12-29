@@ -1,0 +1,70 @@
+
+**** 09/27/18 10:28:44 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-nwe"  [ d:\111\111-pspicefiles\schematic1\nwe.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "nwe.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of F:\8848\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 2s 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source 111
+X_U1         0 N00544 N00882 N00524 N10848 N00544 N00540 N00524 555B
+V_V1         N00524 0 3Vdc
+C_C9         0 N10848  0.01uF  TC=0,0 
+C_C10         0 N00544  820pF  TC=0,0 
+R_R6         N00540 N00524  3k TC=0,0 
+R_R7         N00544 N00540  56k TC=0,0 
+R_R8         N00889 N00882  6.8k TC=0,0 
+R_R9         0 N01347  22M TC=0,0 
+X_D7         N01130 N11376 awb1n4007 PARAMS:                
+X_D8         N11376 N11415 awb1n4007 PARAMS:                
+X_D9         N11415 N01347 awb1n4007 PARAMS:                
+X_Q2         N00943 N00889 0 awb2n5551 PARAMS:                                 
++            
+X_TX1    N00524 N00943 N01130 0 SCHEMATIC1_TX1 
+C_C14         N01130 N11415  0.02uF IC=630 TC=0,0 
+C_C15         0 N11376  0.02uF IC=630 TC=0,0 
+C_C16         0 N01347  0.02uF IC=630 TC=0,0 
+
+.subckt SCHEMATIC1_TX1 1 2 3 4  
+K_TX1         L1_TX1 L2_TX1 0.99 TN33_20_11_2P90
+L1_TX1         1 2 0 
+L2_TX1         3 4 0
+.ends SCHEMATIC1_TX1
+
+**** RESUMING nwe.cir ****
+.END
+
+
+**** EXPANSION OF SUBCIRCUIT X_TX1 ****
+X_TX1.K_TX1 X_TX1.L1_TX1 X_TX1.L2_TX1 0.99 X_TX1.TN33_20_11_2P90
+X_TX1.L1_TX1 N00524 N00943 0
+---------------------------$
+ERROR(ORPSIM-16144): Value may not be 0
+X_TX1.L2_TX1 N01130 0 0
+----------------------$
+ERROR(ORPSIM-16144): Value may not be 0
+

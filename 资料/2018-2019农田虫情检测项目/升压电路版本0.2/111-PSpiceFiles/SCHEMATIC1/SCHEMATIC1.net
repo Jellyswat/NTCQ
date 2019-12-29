@@ -1,0 +1,20 @@
+* source 111
+X_U1         0 N00544 N00882 N00524 N10848 N00544 N00540 N00524 555B
+V_V1         N00524 0 3Vdc
+C_C9         0 N10848  0.01uF  TC=0,0 
+C_C10         N00544 0  820pF  TC=0,0 
+R_R6         N00540 N00524  3k TC=0,0 
+R_R7         N00544 N00540  56k TC=0,0 
+R_R8         N00889 N00882  6.8k TC=0,0 
+X_D7         N35654 N35556 awb1n4007 PARAMS:                
+X_D8         N23387 N35556 awb1n4007 PARAMS:                
+X_D9         N35654 N35695 awb1n4007 PARAMS:                
+X_Q2         N21334 N00889 0 awb2n5551 PARAMS:                                 
++            
+C_C18         N35695 N35556  0.022uF IC=1260  
+C_C19         N35654 N23387  0.022uF IC=1260  
+C_C20         N35556 0  0.022uF IC=630  
+Kn_K1         L_L1 L_L2     1
+L_L1         N00524 N21334  1  
+L_L2         0 N23387  166.67  
+R_R9         0 N35695  1G  

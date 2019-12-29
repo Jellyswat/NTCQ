@@ -1,0 +1,112 @@
+
+**** 04/28/19 15:07:44 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-6666"  [ D:\ddd\gkd\2018-2019农田虫情检测项目\微小电流转化pdf电路图\heiheihei-pspicefiles\schematic1\6666.si
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "6666.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of F:\8848\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "E:\Cadence\SPB_17.2\tools\pspice\library\nom.lib" 
+
+*Analysis directives: 
+.DC LIN I_I1 0A 100nA 10nA 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source HEIHEIHEI
+R_R1         N00419 N00454  1.1M TC=0,0 
+C_C1         N00419 N00454  10n  TC=0,0 
+X_U1A         N01314 N00419 N01363 0 N00454 OPA4131E/BB
+V_V2         N01314 0 DC 1  
+V_V3         N01363 0 DC 3.3  
+C_C5         0 N01363  0.1u  TC=0,0 
+C_C3         N01314 0  0.1u  TC=0,0 
+R_R2         N00454 N02079  10k TC=0,0 
+R_R4         N02087 N02094  8.2k TC=0,0 
+R_R5         N02094 N02177  120k TC=0,0 
+R_R3         N02177 N02194  5.1k TC=0,0 
+V_V4         N02087 0 DC 1  
+V_V1         N02083 0 DC 3.3  
+C_C6         0 N02087  0.1u  TC=0,0 
+C_C2         N02083 0  0.1u  TC=0,0 
+C_C4         0 N02194  0.1u  TC=0,0 
+X_U2A         N02079 N02094 N02083 0 N02177 OPA4131/BB
+I_I1         N00419 0 DC 100nA  
+
+**** RESUMING 6666.cir ****
+.END
+
+**** 04/28/19 15:07:44 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-6666"  [ D:\ddd\gkd\2018-2019农田虫情检测项目\微小电流转化pdf电路图\heiheihei-pspicefiles\schematic1\6666.si
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1A.DY        X_U1A.dx        X_U2A.dx        
+          IS  190.000000E-18  800.000000E-18  800.000000E-18 
+          RS    2.000000E+03                                 
+          KF   22.580000E-18                                 
+
+
+**** 04/28/19 15:07:44 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-6666"  [ D:\ddd\gkd\2018-2019农田虫情检测项目\微小电流转化pdf电路图\heiheihei-pspicefiles\schematic1\6666.si
+
+
+ ****     Junction FET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1A.jx        X_U2A.jx        
+               PJF             PJF             
+         VTO   -1              -1            
+        BETA  812.100000E-06  812.100000E-06 
+          IS    2.500000E-12    2.500000E-12 
+
+
+
+          JOB CONCLUDED
+
+**** 04/28/19 15:07:44 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-6666"  [ D:\ddd\gkd\2018-2019农田虫情检测项目\微小电流转化pdf电路图\heiheihei-pspicefiles\schematic1\6666.si
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  License check-out time            =        1.25
+  Total job time (using Solver 1)   =         .20
+

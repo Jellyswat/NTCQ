@@ -1,0 +1,4 @@
+ lib=e:\cadence\spb_17.2\tools\PSpice\Library\osram_topled.lib, offset=47739, size=1457
+ lib=e:\cadence\spb_17.2\tools\PSpice\Library\di.lib, offset=37085, size=678
+ lib=e:\cadence\spb_17.2\tools\PSpice\Library\anl_misc.lib, offset=21002, size=479
+ lib=e:\cadence\spb_17.2\tools\PSpice\Library\bjn.lib, offset=16275, size=1374

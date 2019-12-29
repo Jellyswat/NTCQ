@@ -1,0 +1,22 @@
+* source 111
+X_D7         N40193 N40189 awb1n4007 PARAMS:                
+X_D8         N40189 N40206 awb1n4007 PARAMS:                
+X_D9         N40206 N40249 awb1n4007 PARAMS:                
+C_C18         N40206 N40193  4.7nF   
+C_C19         N40249 N40189  4.7nF   
+C_C20         N40189 0  4.7nF   
+Kn_K1         L_L1 L_L2 
++ L_L3    0.999999
+L_L1         N56604 N60718  36753.75uH  
+L_L2         0 N60729  540uH  
+R_R1         N60725 N60718  5000 TC=0,0 
+L_L3         N40193 0  4455uH  
+R_R2         0 N40249  22MEG TC=0,0 
+R_R3         0 N63571  100 TC=0,0 
+D_D10         N56604 N63571 LA_T676-TYP 
+X_U1         0 N63689 Sw_tClose PARAMS: tClose=0 ttran=1u Rclosed=0.01
++  Ropen=1Meg
+X_Q4         N56604 N60725 N60729 awb2n2222 PARAMS:                            
++                 
+V_V1         N56604 N63689  
++PULSE 0 3 0 0.1n 0.1n 250m 500m

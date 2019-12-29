@@ -1,0 +1,11 @@
+* source DIDV
+X_U1         N00720 N00676 VCC VEE N00707 OPA4330
+R_R1         N00724 N00720  100k  
+R_R2         0 N00724  200  
+R_R3         N00676 0  100k  
+R_R4         N00695 N00676  230k  
+R_R5         N00695 N00707  10k  
+I_I1         0 N00724 DC 5m  
+C_C1         N00724 0  1n  
+V_V2         0 VEE 5Vdc
+V_V1         VCC 0 5Vdc

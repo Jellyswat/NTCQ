@@ -1,0 +1,17 @@
+* source 111
+X_D7         N40193 N40189 awb1n4007 PARAMS:                
+X_D8         N40189 N40206 awb1n4007 PARAMS:                
+X_D9         N40206 N40249 awb1n4007 PARAMS:                
+C_C18         N40206 N40193  0.022uF IC=1000  
+C_C19         N40249 N40189  0.022uF IC=1000  
+C_C20         N40189 0  0.022uF IC=500  
+Kn_K1         L_L1 L_L2 
++ L_L3    0.999999
+L_L1         N56604 N60718  75.625uH  
+L_L2         0 N60729  10uH  
+X_Q3         N56604 N60725 N60729 awb2n5551 PARAMS:                            
++                 
+V_V1         N56604 0 3Vdc
+R_R1         N60725 N60718  680 TC=0,0 
+L_L3         N40193 0  306250uH  
+R_R2         0 N40249  1G TC=0,0 

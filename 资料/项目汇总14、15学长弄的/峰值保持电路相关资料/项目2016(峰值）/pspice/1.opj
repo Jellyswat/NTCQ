@@ -1,0 +1,44 @@
+(ExpressProject "1"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\1.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x"))
+  (Folder "Outputs")
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles")
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (0402CS-13N
+      (FullPartName "0402CS-13N.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\COILCRAFT.OLB")
+      (DeviceIndex "0")))
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\Users\木子灬暖阳\Desktop\项目2016(峰值）\pspice\1.dsn")
+      (Path "Design Resources"
+         "C:\Users\木子灬暖阳\Desktop\项目2016(峰值）\pspice\1.dsn" "SCHEMATIC1")
+      (Select "Design Resources"
+         "C:\Users\木子灬暖阳\Desktop\项目2016(峰值）\pspice\1.dsn" "SCHEMATIC1"
+         "PAGE1"))
+    (HierarchyView
+      (Select "SCHEMATIC1"))
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -11 -45 0 202 0 219"))
+      (Tab 0)))
+  (MPSSessionName "木子灬暖阳"))

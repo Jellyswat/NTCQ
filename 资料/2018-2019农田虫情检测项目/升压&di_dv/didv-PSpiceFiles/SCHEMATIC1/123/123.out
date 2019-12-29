@@ -1,0 +1,65 @@
+
+**** 12/05/19 10:13:20 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-123"  [ e:\资料\2018-2019农田虫情检测项目\升压&di_dv\didv-pspicefiles\schematic1\123.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "123.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "d:/ddd/213/opa4330_pspice_aio/opa4330.lib" 
+* From [PSPICE NETLIST] section of E:\BaiduNetdisk\Cadence\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+-------------------------------------------------$
+ERROR(ORPSIM-16276): Can't find library
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 5u 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source DIDV
+X_U1         N00720 N00676 VCC VEE N00707 OPA4330
+R_R1         N00724 N00720  100k  
+R_R2         0 N00724  200  
+R_R3         N00676 0  100k  
+R_R4         N00695 N00676  230k  
+R_R5         N00695 N00707  10k  
+C_C1         N00724 0  1n  
+V_V2         0 VEE 5Vdc
+V_V1         VCC 0 5Vdc
+Kn_K1         L_L1 L_L2 
++ L_L3    0.999999
+L_L3         N66174 0  306250uH  
+X_Q3         N66242 N66424 N66474 awb2n5551 PARAMS:                            
++                 
+X_D3         N66184 N66296 awb1n4007 PARAMS:                
+C_C18         N66184 N66174  0.022uF IC=1000  
+X_D2         N66274 N66184 awb1n4007 PARAMS:                
+X_D1         N66174 N66274 awb1n4007 PARAMS:                
+R_R6         N66424 N66384  680 TC=0,0 
+L_L2         0 N66474  10uH  
+V_V3         N66242 0 3Vdc
+L_L1         N66242 N66384  75.625uH  
+C_C19         N66296 N66274  0.022uF IC=1000  
+C_C20         N66274 0  0.022uF IC=500  
+R_R7         N00724 N66296  0.3MEG  
+
+**** RESUMING 123.cir ****
+.END
+

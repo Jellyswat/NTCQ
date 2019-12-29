@@ -1,0 +1,14 @@
+.ALIASES
+X_U1            U1(IN+=N00720 IN-=N00676 +V=VCC -V=VEE OUT=N00707 ) CN @DIDV.SCHEMATIC1(sch_1):INS565@OPA4330.OPA4330.Normal(chips)
+R_R1            R1(1=N00724 2=N00720 ) CN @DIDV.SCHEMATIC1(sch_1):INS596@ANALOG_P.r.Normal(chips)
+R_R2            R2(1=0 2=N00724 ) CN @DIDV.SCHEMATIC1(sch_1):INS612@ANALOG_P.r.Normal(chips)
+R_R3            R3(1=N00676 2=0 ) CN @DIDV.SCHEMATIC1(sch_1):INS628@ANALOG_P.r.Normal(chips)
+R_R4            R4(1=N00695 2=N00676 ) CN @DIDV.SCHEMATIC1(sch_1):INS644@ANALOG_P.r.Normal(chips)
+R_R5            R5(1=N00695 2=N00707 ) CN @DIDV.SCHEMATIC1(sch_1):INS660@ANALOG_P.r.Normal(chips)
+I_I1            I1(+=0 -=N00724 ) CN @DIDV.SCHEMATIC1(sch_1):INS744@SOURCE.ISRC.Normal(chips)
+C_C1            C1(+=N00724 -=0 ) CN @DIDV.SCHEMATIC1(sch_1):INS842@ANALOG.C_elect.Normal(chips)
+V_V2            V2(+=0 -=VEE ) CN @DIDV.SCHEMATIC1(sch_1):INS1813@SOURCE.VDC.Normal(chips)
+V_V1            V1(+=VCC -=0 ) CN @DIDV.SCHEMATIC1(sch_1):INS1793@SOURCE.VDC.Normal(chips)
+_    _(VCC=VCC)
+_    _(VEE=VEE)
+.ENDALIASES

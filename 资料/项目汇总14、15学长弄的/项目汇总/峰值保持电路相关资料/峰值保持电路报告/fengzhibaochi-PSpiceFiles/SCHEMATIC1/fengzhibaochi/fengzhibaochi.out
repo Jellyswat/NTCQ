@@ -1,0 +1,290 @@
+
+**** 10/18/18 11:08:49 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-fengzhibaochi"  [ C:\Users\wxy\Desktop\项目汇总\项目汇总\峰值保持电路相关资料\峰值保持电路报告\fengzhibaochi
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "fengzhibaochi.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of F:\8848\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 10ms 0 100ns 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source FENGZHIBAOCHI
+V_V10         N18123 0 15Vdc
+R_R1         N17763 N17869  10k  
+V_V9         N18005 0 5Vdc
+X_U4         N17681 N18005 0 N18185 N18083 N18205 N18123 awblf398h
+V_V8         N17691 0 -12Vdc
+X_D1         0 N17869 awb1n5816 PARAMS:                
+V_V12         N18299 0 15Vdc
+V_V13         N18339 0 -15Vdc
+R_R2         N17869 0  15k  
+V_V6         N17681 0  
++SIN 0v 5v 1KHz 0 0 0
+C_C2         0 N18381  1000pF  
+C_C1         0 N18083  1n  
+X_U5         N17681 N17869 0 N18339 N18381 N18433 N18299 awblf398h
+V_V1         N17763 0 12Vdc
+X_U3         N17681 N18205 N17763 N17691 N17869 0 LM211/301/TI
+V_V11         N18185 0 -15Vdc
+
+**** RESUMING fengzhibaochi.cir ****
+.END
+
+**** 10/18/18 11:08:49 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-fengzhibaochi"  [ C:\Users\wxy\Desktop\项目汇总\项目汇总\峰值保持电路相关资料\峰值保持电路报告\fengzhibaochi
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U4.DMOD       X_U4.MID        X_D1.model22    X_U5.DMOD       
+          IS   10.000000E-15   10.000000E-15    1.000000E-06   10.000000E-15 
+           N                                    1.9145                       
+          BV                                  225                            
+         IBV                                    1                            
+          RS                                    5.026000E-03                 
+          TT                                   50.000000E-09                 
+         CJO                                  354.710000E-12                 
+          VJ                                     .8                          
+           M                                     .2953                       
+          EG                                    1.11                         
+
+
+               X_U5.MID        X_U3.DX         
+          IS   10.000000E-15  800.000000E-18 
+
+
+**** 10/18/18 11:08:49 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-fengzhibaochi"  [ C:\Users\wxy\Desktop\项目汇总\项目汇总\峰值保持电路相关资料\峰值保持电路报告\fengzhibaochi
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U3.QIN        X_U3.QMI        X_U3.QMO        X_U3.QOC        
+               PNP             NPN             NPN             NPN             
+       LEVEL    1               1               1               1            
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+          BF  666.7             1.002000E+03    1.000000E+03  103.500000E+03 
+          NF    1               1               1               1            
+          BR    1               1               1               1            
+          NR    1               1               1               1            
+         ISS    0               0               0               0            
+          RE    0               0               0               0            
+          RC    0               0               0               0            
+         CJE    0               0               0               0            
+         VJE     .75             .75             .75             .75         
+         CJC    0               0               1.000000E-15    1.000000E-15 
+         VJC     .75             .75             .75             .75         
+         MJC     .33             .33             .33             .33         
+        XCJC    1               1               1               1            
+         CJS    0               0               0               0            
+         VJS     .75             .75             .75             .75         
+          TF                                                   11.600000E-12 
+          TR                                  102.500000E-09   48.190000E-09 
+          KF    0               0               0               0            
+          AF    1               1               1               1            
+          CN    2.2             2.42            2.42            2.42         
+           D     .52             .87             .87             .87         
+
+
+**** 10/18/18 11:08:49 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-fengzhibaochi"  [ C:\Users\wxy\Desktop\项目汇总\项目汇总\峰值保持电路相关资料\峰值保持电路报告\fengzhibaochi
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U4.SDS        X_U5.SDS        
+               NMOS            NMOS            
+       LEVEL    1               1            
+           L  100.000000E-06  100.000000E-06 
+           W  100.000000E-06  100.000000E-06 
+         VTO    0               0            
+          KP    1               1            
+       GAMMA    0               0            
+         PHI     .6              .6          
+      LAMBDA    0               0            
+          IS   10.000000E-15   10.000000E-15 
+          JS    0               0            
+          PB     .8              .8          
+        PBSW     .8              .8          
+          CJ    0               0            
+        CJSW    0               0            
+        CGSO    0               0            
+        CGDO    0               0            
+        CGBO    0               0            
+         TOX    0               0            
+          XJ    0               0            
+       UCRIT   10.000000E+03   10.000000E+03 
+      DIOMOD    1               1            
+         VFB    0               0            
+        LETA    0               0            
+        WETA    0               0            
+          U0    0               0            
+        TEMP    0               0            
+         VDD    5               5            
+       XPART    0               0            
+
+
+**** 10/18/18 11:08:49 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-fengzhibaochi"  [ C:\Users\wxy\Desktop\项目汇总\项目汇总\峰值保持电路相关资料\峰值保持电路报告\fengzhibaochi
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N17681)    0.0000 (N17691)  -12.0000 (N17763)   12.0000 (N17869)     .1464     
+
+(N18005)    5.0000 (N18083)     .0021 (N18123)   15.0000 (N18185)  -15.0000     
+
+(N18205)     .0021 (N18299)   15.0000 (N18339)  -15.0000 (N18381) 1.176E-09     
+
+(N18433) 1.176E-09 (X_U3.7)    1.0939 (X_U3.8)  -11.3580 (X_U3.9)  -11.2750     
+
+(X_U3.10)     .7248                   (X_U3.11)     .7248                       
+
+(X_U3.21)     .4500                   (X_U3.22)     .4521                       
+
+(X_U4.10)     .0020                   (X_U4.11)     .0021                       
+
+(X_U4.12)     .0021                   (X_U4.13)  177.1600                       
+
+(X_U4.14)     .0021                   (X_U4.15) 5.746E-09                       
+
+(X_U4.16)    3.5000                   (X_U4.20)    5.0000                       
+
+(X_U4.21)    1.7543                   (X_U4.22)    1.4000                       
+
+(X_U4.23)    1.0000                   (X_U4.24)    1.7543                       
+
+(X_U4.31)    -.4083                   (X_U4.32)    0.0000                       
+
+(X_U4.33)    0.0000                   (X_U4.34)     .0021                       
+
+(X_U4.35)     .0021                   (X_U4.42)  -65.0000                       
+
+(X_U4.43) 5.746E-09                   (X_U4.44)  -32.5000                       
+
+(X_U4.45)     .0021                   (X_U5.10)     .0020                       
+
+(X_U5.11)     .0021                   (X_U5.12)     .0021                       
+
+(X_U5.13) -626.8200                   (X_U5.14) 1.176E-09                       
+
+(X_U5.15) 2.873E-09                   (X_U5.16)    3.5000                       
+
+(X_U5.20)     .1464                   (X_U5.21)     .1464                       
+
+(X_U5.22)    1.4000                   (X_U5.23)    1.0000                       
+
+(X_U5.24)     .1464                   (X_U5.31) 3.117E-06                       
+
+(X_U5.32)    0.0000                   (X_U5.33)    0.0000                       
+
+(X_U5.34) 1.176E-09                   (X_U5.35) 1.176E-09                       
+
+(X_U5.42)  -65.0000                   (X_U5.43) 3.262E-15                       
+
+(X_U5.44)  -32.5000                   (X_U5.45) 1.176E-09                       
+
+(X_U4.100)    0.0000                  (X_U5.100)    0.0000                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V10       -4.286E-03
+    V_V9        -3.333E-06
+    V_V8         3.696E-03
+    V_V12       -4.286E-03
+    V_V13        4.286E-03
+    V_V6         8.490E-08
+    V_V1        -4.881E-03
+    V_V11        4.286E-03
+    X_U4.VOS    -2.095E-13
+    X_U4.VE      4.637E-02
+    X_U4.VL      0.000E+00
+    X_U4.VF2    -4.183E-13
+    X_U4.VF3     7.182E-08
+    X_U4.VF1    -7.182E-08
+    X_U5.VOS    -2.095E-13
+    X_U5.VE     -8.637E-13
+    X_U5.VL      0.000E+00
+    X_U5.VF2     4.323E-18
+    X_U5.VF3    -4.323E-18
+    X_U5.VF1     1.176E-17
+    X_U3.VI1     7.790E-08
+    X_U3.VI2     7.184E-08
+    X_U3.V1      4.137E-06
+
+    TOTAL POWER DISSIPATION   3.14E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 10/18/18 11:08:49 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-fengzhibaochi"  [ C:\Users\wxy\Desktop\项目汇总\项目汇总\峰值保持电路相关资料\峰值保持电路报告\fengzhibaochi
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =       11.08
+

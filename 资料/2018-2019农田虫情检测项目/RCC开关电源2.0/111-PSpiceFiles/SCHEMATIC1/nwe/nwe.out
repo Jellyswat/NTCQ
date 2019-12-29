@@ -1,0 +1,180 @@
+
+**** 01/01/19 14:12:49 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-nwe"  [ D:\ddd\gkd\2018-2019农田虫情检测项目\RCC开关电源2.0\111-pspicefiles\schematic1\nwe.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "nwe.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of F:\8848\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 500m 0 SKIPBP 
+.OPTIONS ADVCONV
+.OPTIONS ABSTOL= 1p
+.OPTIONS GMIN= 1p
+.OPTIONS VNTOL= 1u
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source 111
+X_D7         N40193 N40189 awb1n4007 PARAMS:                
+X_D8         N40189 N40206 awb1n4007 PARAMS:                
+X_D9         N40206 N40249 awb1n4007 PARAMS:                
+C_C18         N40206 N40193  4.7nF   
+C_C19         N40249 N40189  4.7nF   
+C_C20         N40189 0  4.7nF   
+Kn_K1         L_L1 L_L2 
++ L_L3    0.999999
+L_L1         N56604 N60718  36753.75uH  
+L_L2         0 N60729  540uH  
+R_R1         N60725 N60718  5000 TC=0,0 
+L_L3         N40193 0  4455uH  
+R_R2         0 N40249  22MEG TC=0,0 
+R_R3         0 N63571  100 TC=0,0 
+D_D10         N56604 N63571 LA_T676-TYP 
+X_U1         0 N63689 Sw_tClose PARAMS: tClose=0 ttran=1u Rclosed=0.01
++  Ropen=1Meg
+X_Q4         N56604 N60725 N60729 awb2n2222 PARAMS:                            
++                 
+V_V1         N56604 N63689  
++PULSE 0 3 0 0.1n 0.1n 250m 500m
+
+**** RESUMING nwe.cir ****
+.END
+
+**** 01/01/19 14:12:49 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-nwe"  [ D:\ddd\gkd\2018-2019农田虫情检测项目\RCC开关电源2.0\111-pspicefiles\schematic1\nwe.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               LA_T676-TYP     X_D7.model22    X_D8.model22    X_D9.model22    
+          IS    2.643200E-24  149.000000E-09  149.000000E-09  149.000000E-09 
+           N    1.4571          2.21            2.21            2.21         
+         IKF    3.903600E-03                                                 
+          BV                    1.100000E+03    1.100000E+03    1.100000E+03 
+         IBV                    1               1               1            
+          RS    2.0918           .03             .03             .03         
+          TT                    1.440000E-06    1.440000E-06    1.440000E-06 
+         CJO                   23.130000E-12   23.130000E-12   23.130000E-12 
+          VJ                     .5              .5              .5          
+           M                     .421            .421            .421        
+          EG                    1.11            1.11            1.11         
+
+
+**** 01/01/19 14:12:49 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-nwe"  [ D:\ddd\gkd\2018-2019农田虫情检测项目\RCC开关电源2.0\111-pspicefiles\schematic1\nwe.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_Q4.model4     
+               NPN             
+       LEVEL    1            
+          IS  166.780000E-15 
+          EG    1.11         
+          BF  150            
+          NF    1.074        
+         VAF   78            
+         IKF     .5          
+         ISE    3.920000E-12 
+          NE    1.776        
+          BR    2.394        
+          NR    1.074        
+         VAR  500            
+          NC    1            
+         ISS    0            
+          RB     .676        
+         RBM     .676        
+          RE     .1          
+          RC     .654        
+         CJE   22.250000E-12 
+         VJE    1.333        
+         MJE     .522        
+         CJC    8.370000E-12 
+         VJC    1.333        
+         MJC     .518        
+        XCJC     .5          
+         CJS    0            
+         VJS     .7          
+         MJS     .5          
+          TF  454.400000E-12 
+         XTF   13.24         
+         VTF    4.83         
+         ITF     .2163       
+          TR  117.500000E-09 
+         XTB    2.34         
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 01/01/19 14:12:49 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-nwe"  [ D:\ddd\gkd\2018-2019农田虫情检测项目\RCC开关电源2.0\111-pspicefiles\schematic1\nwe.sim ] 
+
+
+ ****     Voltage Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.Smod       
+         RON     .01         
+        ROFF    1.000000E+06 
+         VON    1            
+        VOFF    0            
+
+
+
+          JOB CONCLUDED
+
+**** 01/01/19 14:12:49 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-nwe"  [ D:\ddd\gkd\2018-2019农田虫情检测项目\RCC开关电源2.0\111-pspicefiles\schematic1\nwe.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =       29.94
+

@@ -1,0 +1,8 @@
+STATUS: PSpice Schematics to Capture translator (17.2.0.d001)
+STATUS:  
+STATUS: Translator started at Monday, December 24, 2018 22:42:21
+STATUS: E:\Cadence\SPB_17.2\tools\bin\sch2cap -f "C:\Users\wxy\Desktop\Murata\MLCC\Automotive\GC3.lib" -o "C:\Users\wxy\Desktop\Murata\MLCC\Automotive\GC3.olb" -i .\cdssetup\OrCAD_PSpice/17.2.0/PSpice.ini
+INFO(ORSCH-1029): Using existing library 'C:\Users\wxy\Desktop\Murata\MLCC\Automotive\GC3.olb'.
+  ERROR: [S2C3471] Base part library  does not exist
+STATUS: Translator stopped at Monday, December 24, 2018 22:42:21
+STATUS: 1 Error messages, 0 Warning messages

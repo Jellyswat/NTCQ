@@ -1,0 +1,61 @@
+
+**** 10/14/18 23:17:28 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-nwe"  [ d:\111\111-pspicefiles\schematic1\nwe.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "nwe.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of F:\8848\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 100m 0 SKIPBP 
+.OPTIONS ADVCONV
+.OPTIONS ABSTOL= 1p
+.OPTIONS GMIN= 1p
+.OPTIONS VNTOL= 1u
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source 111
+X_D7         N61744 N61714 awb1n4007 PARAMS:                
+X_D8         N61778 N61744 awb1n4007 PARAMS:                
+X_D9         N61847 N61778 awb1n4007 PARAMS:                
+C_C18         N60744 N61744  0.033uF IC=630  
+C_C19         N61744 N61847  0.033uF IC=630  
+C_C20         N61778 N61714  0.033uF IC=630  
+Kn_K1         L_L1 L_L2 
++ L_L3    1
+L_L1         N60744 N60718  1400H  
+L_L2         N61714 N62060  30H  
+X_Q3         N60718 N62064 0 awb2n5551 PARAMS:                                 
++            
+V_V1         N60744 0 3Vdc
+R_R1         0 N62060  10k TC=0,0 
+C_C21         N60744 N61847  0.033uF IC=630  
+R_R2         N61847 N60744  2.2M TC=0,0 
+X_D10         N60718 N62064 awb1n4007 PARAMS:                
+
+**** RESUMING nwe.cir ****
+.END
+
+ERROR(ORPSIM-15090):  device L_L3 is undefined
+
+ERROR(ORPSIM-15090):  device L_L3 is undefined
+

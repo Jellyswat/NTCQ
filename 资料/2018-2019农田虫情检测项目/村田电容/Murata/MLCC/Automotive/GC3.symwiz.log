@@ -1,0 +1,13 @@
+STATUS: PSpice Model Import Wizard for "Capture" (17.2.0.d001)
+STATUS:  
+   INFO: LIB driven flow
+   INFO: Input File: C:\Users\wxy\Desktop\Murata\MLCC\Automotive\GC3.lib
+   INFO: Output File: C:\Users\wxy\Desktop\Murata\MLCC\Automotive\GC3.olb
+STATUS:  
+STATUS: Identifying matching symbols automatically...started at Monday, December 24, 2018 17:58:26
+STATUS:  
+  ERROR: Invalid configuration. Verify that valid model and symbol libraries are configured.
+STATUS:  
+STATUS: Completed identifying matching symbols automatically...at Monday, December 24, 2018 17:58:26
+STATUS:  
+STATUS: 1 Error messages, 0 Warning messages

@@ -1,0 +1,19 @@
+** Profile: "SCHEMATIC1-fengzhibaochi"  [ C:\Users\wxy\Desktop\项目汇总\项目汇总\峰值保持电路相关资料\峰值保持电路报告\fengzhibaochi-pspicefiles\schematic1\fengzhibaochi.sim ] 
+
+** Creating circuit file "fengzhibaochi.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of F:\8848\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 10ms 0 100ns 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

@@ -1,0 +1,363 @@
+
+**** 12/31/18 23:50:01 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-123"  [ D:\ddd\gkd\2018-2019农田虫情检测项目\di_dv1.0\didv-pspicefiles\schematic1\123.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "123.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "D:/ddd/gkd/lay/OPA4330_PSPICE_AIO/OPA4330.LIB" 
+* From [PSPICE NETLIST] section of F:\8848\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 100m 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source DIDV
+X_U1         N00720 N00676 VCC VEE N00707 OPA4330
+R_R1         N00724 N00720  100k  
+R_R2         0 N00724  200  
+R_R3         N00676 0  100k  
+R_R4         N00695 N00676  230k  
+R_R5         N00695 N00707  10k  
+I_I1         0 N00724 DC 5m  
+C_C1         N00724 0  1n  
+V_V2         0 VEE 5Vdc
+V_V1         VCC 0 5Vdc
+
+**** RESUMING 123.cir ****
+.END
+
+**** 12/31/18 23:50:01 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-123"  [ D:\ddd\gkd\2018-2019农田虫情检测项目\di_dv1.0\didv-pspicefiles\schematic1\123.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.DD         X_U1.DVN        X_U1.DIN        
+          IS   10.000000E-15  100.000000E-18   10.000000E-15 
+          KF                  105.000000E-18                 
+
+
+**** 12/31/18 23:50:01 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-123"  [ D:\ddd\gkd\2018-2019农田虫情检测项目\di_dv1.0\didv-pspicefiles\schematic1\123.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.QLN        X_U1.QLP        
+               NPN             PNP             
+       LEVEL    1               1            
+          IS  100.000000E-15  100.000000E-15 
+          BF  100             100            
+          NF    1               1            
+          BR    1               1            
+          NR    1               1            
+         ISS    0               0            
+          RE    0               0            
+          RC    0               0            
+         CJE    0               0            
+         VJE     .75             .75         
+         CJC    0               0            
+         VJC     .75             .75         
+         MJC     .33             .33         
+        XCJC    1               1            
+         CJS    0               0            
+         VJS     .75             .75         
+         XTI   18              18            
+          KF    0               0            
+          AF    1               1            
+          CN    2.42            2.2          
+           D     .87             .52         
+
+
+**** 12/31/18 23:50:01 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-123"  [ D:\ddd\gkd\2018-2019农田虫情检测项目\di_dv1.0\didv-pspicefiles\schematic1\123.sim ] 
+
+
+ ****     Junction FET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.JC         
+               NJF             
+         VTO   -2            
+        BETA  100.000000E-06 
+          IS    1.000000E-18 
+
+
+**** 12/31/18 23:50:01 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-123"  [ D:\ddd\gkd\2018-2019农田虫情检测项目\di_dv1.0\didv-pspicefiles\schematic1\123.sim ] 
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.PIN        X_U1.NIN        X_U1.NEN        X_U1.NOUT       
+               PMOS            NMOS            NMOS            NMOS            
+       LEVEL    1               1               1               3            
+           L  100.000000E-06  100.000000E-06  100.000000E-06  100.000000E-06 
+           W  100.000000E-06  100.000000E-06  100.000000E-06  100.000000E-06 
+          LD                                                  100.000000E-09 
+         VTO    -.7              .7              .5              .7          
+          KP  200.000000E-06  200.000000E-06  200.000000E-06  200.000000E-06 
+       GAMMA    0               0               0                .5          
+         PHI     .6              .6              .6              .7          
+      LAMBDA    0               0               0               0            
+          IS   10.000000E-15   10.000000E-15    1.000000E-18    1.000000E-18 
+          JS    0               0               0               0            
+          PB     .8              .8              .8             1            
+        PBSW     .8              .8              .8             1            
+          CJ    0               0               0             910.982900E-06 
+        CJSW    0               0               0               0            
+        CGSO    0               0               0               0            
+        CGDO    0               0               0               0            
+        CGBO    0               0               0               0            
+        NSUB                                                  100.000000E+15 
+         NFS                                                  600.000000E+09 
+         TOX    0               0               0              20.000000E-09 
+          XJ    0               0               0             500.000000E-09 
+          UO                                                  650            
+       UCRIT   10.000000E+03   10.000000E+03   10.000000E+03   10.000000E+03 
+        VMAX                                                  100.000000E+03 
+       DELTA                                                     .5          
+       THETA                                                     .1          
+         ETA                                                    3.000000E-06 
+       KAPPA                                                   10            
+      DIOMOD    1               1               1               1            
+         VFB    0               0               0               0            
+        LETA    0               0               0               0            
+        WETA    0               0               0               0            
+          U0    0               0               0               0            
+        TEMP    0               0               0               0            
+         VDD    5               5               5               5            
+       XPART    0               0               0               0            
+
+
+               X_U1.POUT       
+               PMOS            
+       LEVEL    3            
+         TPG   -1            
+           L  100.000000E-06 
+           W  100.000000E-06 
+          LD  100.000000E-09 
+         VTO    -.7          
+          KP  200.000000E-06 
+       GAMMA     .5          
+         PHI     .7          
+      LAMBDA    0            
+          IS    1.000000E-18 
+          JS    0            
+          PB    1            
+        PBSW    1            
+          CJ  910.982900E-06 
+        CJSW    0            
+        CGSO    0            
+        CGDO    0            
+        CGBO    0            
+        NSUB  100.000000E+15 
+         NFS  600.000000E+09 
+         TOX   20.000000E-09 
+          XJ  500.000000E-09 
+          UO  650            
+       UCRIT   10.000000E+03 
+        VMAX  100.000000E+03 
+       DELTA     .5          
+       THETA     .1          
+         ETA    3.000000E-06 
+       KAPPA   10            
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+**** 12/31/18 23:50:01 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-123"  [ D:\ddd\gkd\2018-2019农田虫情检测项目\di_dv1.0\didv-pspicefiles\schematic1\123.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VCC)    5.0000  (  VEE)   -5.0000  (N00676)    1.0000 (N00695)    3.3001     
+
+(N00707)    3.4001 (N00720)    1.0000 (N00724)    1.0000 (X_U1.6)   -4.4438     
+
+(X_U1.7)   -4.9999 (X_U1.8)   -5.0000 (X_U1.9)    1.7480 (X_U1.10)    1.7480    
+
+(X_U1.11)    1.7480                   (X_U1.12)   -4.9999                       
+
+(X_U1.13)    4.9998                   (X_U1.14)    4.9998                       
+
+(X_U1.15)    4.9999                   (X_U1.16)    5.0000                       
+
+(X_U1.17)   -4.9998                   (X_U1.18)     .5955                       
+
+(X_U1.19)     .5955                   (X_U1.20)     .5539                       
+
+(X_U1.21)     .5539                   (X_U1.22)    1.0000                       
+
+(X_U1.23)    1.0000                   (X_U1.24)    5.0000                       
+
+(X_U1.25)    0.0000                   (X_U1.26)   -5.0000                       
+
+(X_U1.27)    1.0000                   (X_U1.28)    1.0000                       
+
+(X_U1.29) 500.0E-06                   (X_U1.30)-500.0E-06                       
+
+(X_U1.31) 99.99E-06                   (X_U1.32)    1.0000                       
+
+(X_U1.33)    1.0000                   (X_U1.34)    1.0000                       
+
+(X_U1.35)    1.0000                   (X_U1.36)     .0092                       
+
+(X_U1.37)    3.4001                   (X_U1.38)   -4.3199                       
+
+(X_U1.39)    3.4002                   (X_U1.40)    4.2255                       
+
+(X_U1.41)    4.2500                   (X_U1.42)   -4.8620                       
+
+(X_U1.43)    1.0000                   (X_U1.44)   -4.8620                       
+
+(X_U1.45)    1.0000                   (X_U1.46)   -4.3077                       
+
+(X_U1.47)    4.2255                   (X_U1.48)    4.2255                       
+
+(X_U1.49)   -4.3199                   (X_U1.50)   -4.3199                       
+
+(X_U1.51) 4.098E-06                   (X_U1.52)    1.0000                       
+
+(X_U1.53)    4.3530                   (X_U1.54)    1.0000                       
+
+(X_U1.55)    1.7480                   (X_U1.56)    4.2834                       
+
+(X_U1.57)    4.6014                   (X_U1.58)   -4.6014                       
+
+(X_U1.59) 4.098E-06                   (X_U1.60)    3.6663                       
+
+(X_U1.61)    -.0245                   (X_U1.62)-1.115E+06                       
+
+(X_U1.63)   -4.3199                   (X_U1.64)    4.2255                       
+
+(X_U1.65)    -.0549                   (X_U1.66)     .6551                       
+
+(X_U1.67)    3.4001                   (X_U1.68)    3.4001                       
+
+(X_U1.69)    3.4001                   (X_U1.70)    1.0000                       
+
+(X_U1.71)     .6551                   (X_U1.72)   -1.1429                       
+
+(X_U1.73)    1.0000                   (X_U1.74)    1.0000                       
+
+(X_U1.75) 200.0E-06                   (X_U1.76)    1.0000                       
+
+(X_U1.77)     .3000                   (X_U1.78)     .3000                       
+
+(X_U1.79)     .3000                   (X_U1.80)    5.0000                       
+
+(X_U1.81)    5.0000                   (X_U1.82) 3.173E-09                       
+
+(X_U1.83) 3.173E-09                   (X_U1.84)   -4.3000                       
+
+(X_U1.85)    4.1000                   (X_U1.86)    1.7480                       
+
+(X_U1.87)    0.0000                   (X_U1.88)    0.0000                       
+
+(X_U1.89)    1.0000                   (X_U1.90)    4.5300                       
+
+(X_U1.91)   -4.5300                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2        -1.684E-05
+    V_V1        -2.684E-05
+    X_U1.V18     1.369E-20
+    X_U1.V21     2.300E-06
+    X_U1.V24    -5.490E-08
+    X_U1.V52     0.000E+00
+    X_U1.V81    -1.143E-07
+    X_U1.V141   -9.998E-07
+    X_U1.V144    0.000E+00
+    X_U1.V147    1.441E-11
+    X_U1.V148    2.241E-11
+    X_U1.V149   -2.066E-10
+
+    TOTAL POWER DISSIPATION   2.20E-04  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 12/31/18 23:50:01 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-123"  [ D:\ddd\gkd\2018-2019农田虫情检测项目\di_dv1.0\didv-pspicefiles\schematic1\123.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .05
+

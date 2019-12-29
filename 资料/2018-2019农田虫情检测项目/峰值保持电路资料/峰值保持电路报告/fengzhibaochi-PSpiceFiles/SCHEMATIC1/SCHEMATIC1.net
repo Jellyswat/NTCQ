@@ -1,0 +1,18 @@
+* source FENGZHIBAOCHI
+V_V10         N18123 0 15Vdc
+R_R1         N17763 N17869  10k  
+V_V9         N18005 0 5Vdc
+X_U4         N17681 N18005 0 N18185 N18083 N18205 N18123 awblf398h
+V_V8         N17691 0 -12Vdc
+X_D1         0 N17869 awb1n5816 PARAMS:                
+V_V12         N18299 0 15Vdc
+V_V13         N18339 0 -15Vdc
+R_R2         N17869 0  15k  
+V_V6         N17681 0  
++SIN 0v 3.3v 1KHz 0 0 0
+C_C2         0 N18381  1000pF  
+C_C1         0 N18083  1n  
+X_U5         N17681 N17869 0 N18339 N18381 N18433 N18299 awblf398h
+V_V1         N17763 0 12Vdc
+X_U3         N17681 N18205 N17763 N17691 N17869 0 LM211/301/TI
+V_V11         N18185 0 -15Vdc

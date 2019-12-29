@@ -1,0 +1,14 @@
+.ALIASES
+R_R1            R1(1=N15714 2=N20660 ) CN @TEST.SCHEMATIC1(sch_1):INS14969@ANALOG.R.Normal(chips)
+R_R2            R2(1=0 2=N20638 ) CN @TEST.SCHEMATIC1(sch_1):INS14985@ANALOG.R.Normal(chips)
+R_R3            R3(1=N20993 2=N15042 ) CN @TEST.SCHEMATIC1(sch_1):INS15026@ANALOG.R.Normal(chips)
+C_C1            C1(1=0 2=N15042 ) CN @TEST.SCHEMATIC1(sch_1):INS15102@ANALOG.C.Normal(chips)
+C_C2            C2(1=+5V 2=N15252 ) CN @TEST.SCHEMATIC1(sch_1):INS15231@ANALOG.C.Normal(chips)
+C_C3            C3(1=0 2=-5V ) CN @TEST.SCHEMATIC1(sch_1):INS15442@ANALOG.C.Normal(chips)
+C_C4            C4(1=+5V 2=N20762 ) CN @TEST.SCHEMATIC1(sch_1):INS15507@ANALOG.C.Normal(chips)
+C_C5            C5(1=0 2=+5V ) CN @TEST.SCHEMATIC1(sch_1):INS15644@ANALOG.C.Normal(chips)
+R_R4            R4(1=N20660 2=N20993 ) CN @TEST.SCHEMATIC1(sch_1):INS15797@ANALOG.R.Normal(chips)
+V_V12           V12(+=N15714 -=0 ) CN @TEST.SCHEMATIC1(sch_1):INS18333@SOURCE.VDC.Normal(chips)
+_    _(+5V=+5V)
+_    _(-5V=-5V)
+.ENDALIASES
