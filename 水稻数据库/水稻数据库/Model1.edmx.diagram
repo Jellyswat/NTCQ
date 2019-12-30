@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="08675cce0a3d4fea85ec5136eea0ae68" Name="Diagram1" ZoomLevel="95" >
+        <EntityTypeShape EntityType="Model1.UserInfo" Width="1.5" PointX="2" PointY="0.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.DataList" Width="1.5" PointX="2" PointY="3.25" />
+        <EntityTypeShape EntityType="Model1.LogList" Width="1.5" PointX="4.375" PointY="0.875" />
+        <AssociationConnector Association="Model1.UserInfoLogList" />
+        <EntityTypeShape EntityType="Model1.SectionList" Width="1.5" PointX="4.375" PointY="3.5" IsExpanded="true" />
+        <AssociationConnector Association="Model1.DataListSectionList" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

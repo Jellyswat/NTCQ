@@ -1,0 +1,57 @@
+﻿@{
+    Layout = null;
+}
+
+<head>
+    <title>农田虫情检测系统</title>
+</head>
+
+<link rel="stylesheet" href="~/Content/NTCQ/index.css" type="text/css" />
+<link href="~/Content/bootstrap.css" rel="stylesheet" />
+
+<body>
+    <div class="htmleaf-container">
+        <div class="wrapper">
+            <div class="container">
+                <h1>农田虫情检测系统</h1>
+
+                <form id="form">
+
+                    <input id="userName" name="userName" type="text" placeholder="Username" />
+                    <input id="pwd" name="pwd" type="password" placeholder="Password" />
+                    <input id="submit_btn" type="button" value="Login" class="subbut" />
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="AddModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">首次登陆修改密码</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <p>请输入新密码：</p><input id="InsertPassword" type="password" />
+                        <p>再次输入新密码：</p><input id="InsertDouPassword" type="password" />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="doSubmitAdd">保存</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
+    </div>
+
+    <script src="~/Scripts/jquery-3.3.1.js"></script>
+    <script src="~/Scripts/umd/popper.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/bootstrap-table.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/locale/bootstrap-table-zh-CN.min.js"></script>
+    <script src="~/Scripts/NTCQ/Index.js"></script>
+</body>
+

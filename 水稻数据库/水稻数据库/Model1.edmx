@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl" Namespace="Model1.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005">
+        <EntityContainer Name="Model1TargetContainer" >
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="Model1" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+        <EntityContainer Name="Model1Container" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="UserInfoSet" EntityType="Model1.UserInfo" />
+          <EntitySet Name="DataListSet" EntityType="Model1.DataList" />
+          <EntitySet Name="LogListSet" EntityType="Model1.LogList" />
+          <AssociationSet Name="UserInfoLogList" Association="Model1.UserInfoLogList">
+            <End Role="UserInfo" EntitySet="UserInfoSet" />
+            <End Role="LogList" EntitySet="LogListSet" />
+          </AssociationSet>
+          <EntitySet Name="SectionListSet" EntityType="Model1.SectionList" />
+          <AssociationSet Name="DataListSectionList" Association="Model1.DataListSectionList">
+            <End Role="DataList" EntitySet="DataListSet" />
+            <End Role="SectionList" EntitySet="SectionListSet" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="UserInfo">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserName" Type="String" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" />
+          <Property Name="Tel" Type="String" Nullable="false" />
+          <Property Name="Password" Type="String" Nullable="false" />
+          <Property Name="Power" Type="Int16" Nullable="false" />
+          <NavigationProperty Name="LogList" Relationship="Model1.UserInfoLogList" FromRole="UserInfo" ToRole="LogList" />
+        </EntityType>
+        <EntityType Name="DataList">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="startTime" Type="DateTime" Nullable="false" />
+          <Property Name="endTime" Type="DateTime" Nullable="false" />
+          <Property Name="Num" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="SectionList" Relationship="Model1.DataListSectionList" FromRole="DataList" ToRole="SectionList" />
+        </EntityType>
+        <EntityType Name="LogList">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Affair" Type="String" Nullable="false" />
+          <NavigationProperty Name="UserInfo" Relationship="Model1.UserInfoLogList" FromRole="LogList" ToRole="UserInfo" />
+          <Property Name="Time" Type="DateTime" Nullable="false" />
+        </EntityType>
+        <Association Name="UserInfoLogList">
+          <End Type="Model1.UserInfo" Role="UserInfo" Multiplicity="1" />
+          <End Type="Model1.LogList" Role="LogList" Multiplicity="*" />
+        </Association>
+        <EntityType Name="SectionList">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="sectionName" Type="String" Nullable="false" />
+          <NavigationProperty Name="DataList" Relationship="Model1.DataListSectionList" FromRole="SectionList" ToRole="DataList" />
+        </EntityType>
+        <Association Name="DataListSectionList">
+          <End Type="Model1.DataList" Role="DataList" Multiplicity="*" />
+          <End Type="Model1.SectionList" Role="SectionList" Multiplicity="1" />
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs" Space="C-S">
+        <Alias Key="Model" Value="Model1" />
+        <Alias Key="Target" Value="Model1.Store" />
+        <EntityContainerMapping CdmEntityContainer="Model1Container" StorageEntityContainer="Model1TargetContainer">
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="无" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
